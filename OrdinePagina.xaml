@@ -1,0 +1,23 @@
+﻿<Page x:Class="PiadinaStand.OrdinePagina"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PiadinaStand"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="OrdinePagina">
+
+    <Grid>
+        <Canvas>
+            <ListBox x:Name="lbxMenu" Height="171" Width="184" HorizontalAlignment="Left" Canvas.Left="18" Canvas.Top="34" VerticalAlignment="Top" SelectionChanged="lbxMenu_SelectionChanged" />
+            <Label x:Name="lblQuantitaTitle" Content="Quantita:" Height="27" Width="74" HorizontalAlignment="Left" Canvas.Left="224" Canvas.Top="34" VerticalAlignment="Center"/>
+            <Button x:Name="btnPiu" Content="+" Height="20" Width="22" Click="btnPiu_Click" HorizontalAlignment="Left" Canvas.Left="224" Canvas.Top="71" VerticalAlignment="Top"/>
+            <Button x:Name="btnPiu_Copy" Content="-" Height="20" Width="22" RenderTransformOrigin="1.485,0.667" HorizontalAlignment="Left" Canvas.Left="294" Canvas.Top="71" VerticalAlignment="Top" Click="btnPiu_Copy_Click"/>
+            <Label x:Name="lblQuantita" Content="0" Height="23" Width="24" HorizontalAlignment="Center" Canvas.Left="257" Canvas.Top="68" VerticalAlignment="Top"/>
+            <Button x:Name="btnAgiungiOrdine" Content="Aggiungi" Height="31" Canvas.Left="228" Canvas.Top="109" Width="88" Click="btnAgiungiOrdine_Click"/>
+            <Button x:Name="btnRimuoviOrdine" Content="Rimuovi" Height="31" Canvas.Left="228" Canvas.Top="145" Width="88" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="lblOrdine" Content="" Height="166" Canvas.Left="358" Canvas.Top="39" Width="371" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </Canvas>
+    </Grid>
+</Page>
